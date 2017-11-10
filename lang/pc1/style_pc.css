@@ -1,0 +1,140 @@
+
+#maket{
+  max-width: 1280px;
+  min-width:300px;
+  margin:0 auto;
+  overflow: hidden;
+}
+
+#header {
+  background: #9db7f0;
+  height: 100px;
+}
+
+#container-outer {
+  float:left;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+#container-inner {
+  float:left;
+  background: #555;
+  position: relative;
+  right:75%;
+}
+
+#left {
+  float: left;
+  width: 25%;
+  min-width: 20%;
+  position: relative;
+  left: 75%;
+  height: calc(100vh - 0px);
+}
+
+
+#screen_greeting {
+
+  width: 100%;
+  position: relative;
+
+  flex-flow: row wrap;
+  justify-content: center;
+
+  margin: 0px 0px;
+  list-style: none;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+}
+
+img {
+  margin: auto;
+  width: 40%;
+  max-height:100%
+}
+
+.screen_flex {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  box-flex: 1;
+  -webkit-flex: 1 1 auto;
+  flex: 1 4 auto;
+  text-align: center;
+}
+
+#content {
+
+  width: 75%;
+  position: relative;
+  left: 75%;
+
+  flex-flow: row wrap;
+  justify-content: space-between;
+
+  margin: 0px 0px;
+  list-style: none;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+}
+
+#left_content {
+
+  width: 100%;
+  position: relative;
+  /*left: 75%;*/
+
+  flex-flow: row wrap;
+  justify-content: space-between;
+
+  margin: 0px 0px;
+  list-style: none;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+}
+
+#footer {
+  max-width:1280px;
+  min-width:300px;
+  clear:both;
+  height: 150px;
+  color: white;
+  background: #300202;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#header h2{
+  margin-left: 5px;
+  margin-top: 0px;
+}
+
+.flex_left{
+
+  background: rgb(246, 216, 90);
+  width: 75%;
+  height: 150px;
+  border-radius: 5px;
+
+  font-size: 1em;
+  text-align:justify;
+  text-overflow: ellipsis;
+  overflow: hidden;
+
+  margin: 2px 2px;
+}

@@ -1,0 +1,13 @@
+https://css-tricks.com/couple-takes-sticky-footer/
+https://habrahabr.ru/post/243161/
+http://www.vanseodesign.com/blog/demo/equal-height-columns/faux-columns.php
+http://htmlbook.ru/blog/4-metoda-sozdaniya-kolonok-odinakovoy-vysoty
+http://htmlbook.ru/content/rezinovyy-dizayn-dvukhkolonnyy-maket
+https://discuss.atom.io/t/closing-a-project-folder/18392
+http://ktonanovenkogo.ru/html/div-verstka-html/blochnaya-verstka-div-verstka-kak-prizhat-footer-k-nizhnej-chasti-ekrana-maket-sajta-blochnoj-verstki.html
+https://www.w3schools.com/howto/howto_js_sidenav.asp
+https://css-tricks.com/almanac/properties/f/flex-shrink/
+http://www.responsinator.com/?url=sharkevo.ru
+http://fimushkin.com/blog/design/adaptivnyj-dizajn-sajta/
+https://tproger.ru/translations/how-css-flexbox-works/
+https://e-planet.ru/company/blog/oshibki-kotorye-mogut-voznikat-pri-ispolzovanii-flexbox-i-ih-reshenie.html#

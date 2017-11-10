@@ -1,0 +1,11 @@
+gmail
+bottle
+gunicorn
+bottle-pgsql
+openpyxl
+pytz
+python-dateutil
+jinja2
+wsgigzip
+psycopg2
+requests

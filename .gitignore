@@ -1,0 +1,3 @@
+# Created by .ignore support plugin (hsz.mobi)
+web_shark/__pycache__/*.pyc
+web_shark/.idea
