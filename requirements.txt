@@ -9,3 +9,4 @@ jinja2
 wsgigzip
 psycopg2
 requests
+gevent
