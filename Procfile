@@ -1,1 +1,1 @@
-web: python lang/bottle_app.py
+web: python lime/app.py
