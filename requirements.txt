@@ -11,3 +11,4 @@ psycopg2
 requests
 gevent
 beaker
+gevent-websocket
