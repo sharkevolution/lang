@@ -23,7 +23,7 @@ from gevent import monkey;
 
 monkey.patch_all()
 from gevent.pywsgi import WSGIServer
-from geventwebsocket.handler import WebSocketHandler
+# from geventwebsocket.handler import WebSocketHandler
 
 
 @bottle.route('/resources/<action>/<filepath:path>')
