@@ -12,3 +12,4 @@ requests
 gevent
 beaker
 gevent-websocket
+cherrypy
