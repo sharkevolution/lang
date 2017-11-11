@@ -20,7 +20,7 @@ from bottle import view
 @bottle.route('/')
 @view('index')
 def index():
-    return dict(csf="../resources/css/styles.css")
+    return dict(csf="resources/css/styles.css")
 
 
 
