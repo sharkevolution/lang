@@ -16,11 +16,13 @@
 import os
 
 from lime.project import app
+from lime import config
 
 import bottle
 from bottle import static_file
 import cherrypy
 import wsgigzip
+
 
 # from gevent import monkey;
 
@@ -31,7 +33,8 @@ from gevent.pywsgi import WSGIServer
 
 @bottle.route('/resources/<action>/<filepath:path>')
 def server_static(action, filepath):
-    return static_file(filepath, root='./project/resources/' + action + '/')
+
+    return static_file(filepath, root=config.RESOURCES_PATH + '/' + action + '/')
 
 
 # @bottle.route('/resources/bootstrap/<action>/<filepath:path>')
