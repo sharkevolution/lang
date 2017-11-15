@@ -15,3 +15,6 @@
 @import url(smart0/sidenav.css) (max-width: 480px);
 
 @import url(content.css);
+@import url(turn_page.css);
+@import url(img_text.css);
+@import url(bread.css);

@@ -1,3 +1,4 @@
+# -*- coding: UTF-8 -*-
 #!/usr/bin/python
 
 # https://vovkd.github.io/gevent-tutorial/
@@ -13,48 +14,31 @@
 # https://postgrespro.ru/docs/postgresql/9.6/tutorial-createdb.html
 # https://www.djangosites.org/s/python-web-id/
 
+# from gevent import monkey
+# monkey.patch_all()
+# from gevent.pywsgi import WSGIServer
+# from geventwebsocket.handler import WebSocketHandler
+
 import os
-
-from lime.project import app
-from lime import config
-
-import bottle
-from bottle import static_file
 import cherrypy
 import wsgigzip
 
-
-# from gevent import monkey;
-
-# monkey.patch_all()
-from gevent.pywsgi import WSGIServer
-# from geventwebsocket.handler import WebSocketHandler
-
-
-@bottle.route('/resources/<action>/<filepath:path>')
-def server_static(action, filepath):
-
-    return static_file(filepath, root=config.RESOURCES_PATH + '/' + action + '/')
-
-
-# @bottle.route('/resources/bootstrap/<action>/<filepath:path>')
-# def server_static(action, filepath):
-#     return static_file(filepath, root='./project/resources/bootstrap/' + action + '/')
-
+from lime.project import app
 
 host = "0.0.0.0"
-port = 8000
-
-# server = WSGIServer((host, port), app)
-# server = WSGIServer((host, port), app, handler_class=WebSocketHandler)
-# print("access @ http://{0}:{1}/websocket.html".format(host, port))
-# server.serve_forever()
-
+port = os.environ.get("PORT", 5000)
+def_app = wsgigzip.GzipMiddleware(app)
 # app = wsgigzip.GzipMiddleware(bottle.default_app())
 
-cherrypy.config.update({'server.socket_host': "0.0.0.0",
-                        'server.socket_port': int(os.environ.get("PORT", 5000))})
-cherrypy.tree.graft(app)
+# --------------------------------------------------------------
+cherrypy.config.update({'server.socket_host': host,
+                        'server.socket_port': port})
+cherrypy.tree.graft(def_app)
 cherrypy.engine.start()
 cherrypy.engine.block()
+#----------------------------------------------------------------
 
+# server = WSGIServer((host, port), def_app, handler_class=WebSocketHandler)
+# server.serve_forever()
+
+# https://gist.github.com/dusual/9838932

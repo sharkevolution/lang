@@ -1,3 +1,4 @@
+# -*- coding: UTF-8 -*-
 
 import bottle
 from bottle import view

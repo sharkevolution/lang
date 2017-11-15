@@ -11,3 +11,6 @@ http://www.responsinator.com/?url=sharkevo.ru
 http://fimushkin.com/blog/design/adaptivnyj-dizajn-sajta/
 https://tproger.ru/translations/how-css-flexbox-works/
 https://e-planet.ru/company/blog/oshibki-kotorye-mogut-voznikat-pri-ispolzovanii-flexbox-i-ih-reshenie.html#
+https://stackoverflow.com/questions/42030199/css-responsive-text-over-images-in-flexbox
+http://html5.by/blog/flexbox/
+https://vc.ru/16078-scroll-vs-pages
