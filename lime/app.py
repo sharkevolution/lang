@@ -26,7 +26,7 @@ import wsgigzip
 from lime.project import app
 
 host = "0.0.0.0"
-port = os.environ.get("PORT", 5000)
+port = int(os.environ.get("PORT", 5000))
 def_app = wsgigzip.GzipMiddleware(app)
 # app = wsgigzip.GzipMiddleware(bottle.default_app())
 
