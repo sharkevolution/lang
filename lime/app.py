@@ -14,10 +14,10 @@
 # https://postgrespro.ru/docs/postgresql/9.6/tutorial-createdb.html
 # https://www.djangosites.org/s/python-web-id/
 
-# from gevent import monkey
-# monkey.patch_all()
-# from gevent.pywsgi import WSGIServer
-# from geventwebsocket.handler import WebSocketHandler
+from gevent import monkey
+monkey.patch_all()
+from gevent.pywsgi import WSGIServer
+from geventwebsocket.handler import WebSocketHandler
 
 import os
 import cherrypy
@@ -31,14 +31,14 @@ def_app = wsgigzip.GzipMiddleware(app)
 # app = wsgigzip.GzipMiddleware(bottle.default_app())
 
 # --------------------------------------------------------------
-cherrypy.config.update({'server.socket_host': host,
-                        'server.socket_port': port})
-cherrypy.tree.graft(def_app)
-cherrypy.engine.start()
-cherrypy.engine.block()
+# cherrypy.config.update({'server.socket_host': host,
+#                         'server.socket_port': port})
+# cherrypy.tree.graft(def_app)
+# cherrypy.engine.start()
+# cherrypy.engine.block()
 #----------------------------------------------------------------
 
-# server = WSGIServer((host, port), def_app, handler_class=WebSocketHandler)
-# server.serve_forever()
+server = WSGIServer((host, port), def_app, handler_class=WebSocketHandler)
+server.serve_forever()
 
 # https://gist.github.com/dusual/9838932
